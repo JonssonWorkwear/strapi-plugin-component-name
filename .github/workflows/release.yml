@@ -25,6 +25,7 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Compile TypeScript
         run: yarn build
+      - run: ls dist
       - name: Create semantic release and publish
         run: npx semantic-release
         env:
