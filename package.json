@@ -1,6 +1,6 @@
 {
   "name": "@jonssonworkwear/strapi-plugin-component-name",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Generates field for component name for the API",
   "strapi": {
     "name": "component-name",
