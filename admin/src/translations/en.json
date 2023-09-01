@@ -1,0 +1,9 @@
+{
+  "component-name.label": "Component name field",
+  "component-name.description": "Generates component name for the API",
+  "component-name.component.label": "Component options",
+  "component-name.settings": "Settings",
+  "component-name.settings.default": "Default component name",
+  "component-name.required.label": "Required field",
+  "component-name.required.description": "You won't be able to create an entry if this field is empty"
+}
