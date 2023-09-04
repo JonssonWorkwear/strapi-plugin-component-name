@@ -4,6 +4,10 @@ import { Field, FieldHint, FieldError, TextInput } from '@strapi/design-system';
 
 import { useIntl } from 'react-intl';
 
+const displayNoneStyle = {
+  display: 'none',
+};
+
 const ComponentNameField = ({
   intlLabel,
   name,
@@ -22,7 +26,7 @@ const ComponentNameField = ({
 
   // Return TextInput, but always disabled and hidden
   return (
-    <Field name={name} id={name} error={error} hint={description}>
+    <Field name={name} id={name} error={error} hint={description} style={displayNoneStyle}>
       <TextInput
         label={formatMessage(intlLabel)}
         name={name}
