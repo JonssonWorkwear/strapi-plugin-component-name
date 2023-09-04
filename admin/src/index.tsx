@@ -1,5 +1,7 @@
 import { prefixPluginTranslations } from '@strapi/helper-plugin';
 
+import * as yup from 'yup';
+
 import PluginIcon from './components/PluginIcon';
 
 export default {
@@ -23,22 +25,18 @@ export default {
       options: {
         base: [
           {
-            sectionTitle: {
-              id: 'component-name.component.label',
-              defaultMessage: 'Component options',
+            autoFocus: true,
+            name: 'default',
+            type: 'text',
+            intlLabel: {
+              id: 'component-name.default.label',
+              defaultMessage: 'Default component name',
             },
-            items: [
-              {
-                autoFocus: true,
-                name: 'default',
-                type: 'text',
-                intlLabel: {
-                  id: 'component-name.settings.default',
-                  defaultMessage: 'Default component name',
-                },
-                validations: {},
-              },
-            ],
+            description: {
+              id: 'component-name.default.description',
+              defaultMessage: 'The original name of the component',
+            },
+            required: true,
           },
         ],
         advanced: [
@@ -63,6 +61,12 @@ export default {
             ],
           },
         ],
+        validator: (args) => ({
+          default: yup.string().required({
+            id: 'component-name.default.error',
+            defaultMessage: 'Default name is required',
+          }),
+        }),
       },
     });
   },

@@ -3,7 +3,11 @@
   "component-name.description": "Generates component name for the API",
   "component-name.component.label": "Component options",
   "component-name.settings": "Settings",
-  "component-name.settings.default": "Default component name",
+  "component-name.default.label": "Default component name",
+  "component-name.default.description": "The original name of the component",
+  "component-name.default.error": "Default name is required",
   "component-name.required.label": "Required field",
-  "component-name.required.description": "You won't be able to create an entry if this field is empty"
+  "component-name.required.description": "You won't be able to create an entry if this field is empty",
+  "component-name.hidden.label": "Hide field",
+  "component-name.hidden.description": "This field won't be available in the Content Manager entry form"
 }
