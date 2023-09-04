@@ -22,7 +22,7 @@ const ComponentNameField = ({
   const { formatMessage } = useIntl();
 
   // Always set the value to the default value
-  onChange({ target: { name, value: attribute.default } });
+  onChange({ target: { name, value: attribute?.options?.defaultName } });
 
   // Return TextInput, but always disabled and hidden
   return (
