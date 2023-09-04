@@ -2,6 +2,9 @@
 
 This package provides a custom field for Strapi that holds the name of the component that is being used. It is set in the Content-Type Builder, hidden in the Content Manager, and only available to the API.
 
+![Component name custom field preview. Features a disabled text field.](https://github.com/JonssonWorkwear/strapi-plugin-component-name/assets/22895284/2d9854ef-efe6-428a-8b71-462cce511c52)
+
+
 <div align="center">
   <a href="https://github.com/JonssonWorkwear/strapi-plugin-component-name/actions/workflows/release.yml">
     <img src="https://github.com/JonssonWorkwear/strapi-plugin-component-name/actions/workflows/release.yml/badge.svg?branch=release" alt="Release status">
