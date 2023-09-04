@@ -26,7 +26,7 @@ export default {
         base: [
           {
             autoFocus: true,
-            name: 'default',
+            name: 'options.defaultName',
             type: 'text',
             intlLabel: {
               id: 'component-name.default.label',
@@ -62,7 +62,7 @@ export default {
           },
         ],
         validator: (args) => ({
-          default: yup.string().required({
+          defaultName: yup.string().required({
             id: 'component-name.default.error',
             defaultMessage: 'Default name is required',
           }),
