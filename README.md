@@ -1,3 +1,5 @@
+⚠️ **ARCHIVED**: This plugin has been dropped in favour of using `__typename` from the GraphQL API. It is not maintained or used anymore.
+
 # Component name custom field
 
 This package provides a custom field for Strapi that holds the name of the component that is being used. It is set in the Content-Type Builder, hidden in the Content Manager, and only available to the API.
